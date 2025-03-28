@@ -34,6 +34,8 @@ const logRequests = (req, res, next) => {
 app.use(logRequests);
 app.use(cors());
 app.use(express.json());
+// app.use(cors({ origin: 'http://localhost:5176' }));
+
 
 const loadData = (key) => {
     try {
